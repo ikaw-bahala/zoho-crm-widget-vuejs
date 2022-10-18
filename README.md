@@ -28,6 +28,13 @@ npm run dev
 npm run build
 ```
 
+### Compile and pack for CRM Production
+
+```sh
+npm run pack
+```
+upload the zip file under the packed folder
+
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
