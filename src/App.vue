@@ -22,6 +22,26 @@ import TheWelcome from "./components/TheWelcome.vue";
     <TheWelcome />
   </main>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  mounted() {
+    console.log("test");
+    ZOHO.CRM.API.getAllRecords({
+      Entity: "Leads",
+      sort_order: "asc",
+      per_page: 2,
+      page: 1,
+    }).then(function (data) {
+      console.log(data);
+    });
+  },
+};
+</script>
 
 <style scoped>
 header {
