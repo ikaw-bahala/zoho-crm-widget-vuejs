@@ -22,6 +22,8 @@ export default defineConfig({
   plugins: [vue(),
     renameIndexPlugin('widget.html'),
   ],
+  base: '',
+  publicPath: '',
   build: {
     outDir: "build/app",
   },
